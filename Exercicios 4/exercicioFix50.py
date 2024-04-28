@@ -1,5 +1,6 @@
-def processar_numero():
-    # Solicitar ao usuário que insira um número
+from math import fabs
+
+def process_number():
     num = float(input("Digite um número: "))
 
     # Nome e RA João Rafael
@@ -7,7 +8,7 @@ def processar_numero():
 
     # Se o número for negativo, mostrar o módulo do número
     if num < 0:
-        print(abs(num))
+        print(fabs(num))
 
     # Se o número for maior que 10, solicitar outro número e mostrar a diferença entre eles
     elif num > 10:
@@ -18,5 +19,5 @@ def processar_numero():
     else:
         print(num / 5)
 
-# Chamar a função para executar o código
-processar_numero()
+# Call the function to execute the code
+process_number()
